@@ -1,0 +1,20 @@
+	<ion-header>
+		<ion-navbar color="primary">
+			<ion-title> Login </ion-title> 
+		</ion-navbar>
+	</ion-header>
+	
+<ion-content padding>
+	<ion-list>
+
+	  <ion-item>
+		<ion-input type="text" placeholder="Username" [(ngModel)] = "usercreds.email"></ion-input>
+	  </ion-item>
+
+	  <ion-item>
+		<ion-input type="password" placeholder="Password" [(ngModel)] = "usercreds.password"></ion-input>
+	  </ion-item>
+		
+	  <button ion-button block color="royal" class="marginTop" (click)="login(usercreds)">Login</button>
+	</ion-list>
+</ion-content>
